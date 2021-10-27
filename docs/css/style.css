@@ -399,31 +399,6 @@ footer h4{
         border-left: unset;
         border-bottom: 1px solid var(--grey-light);
         padding-bottom: 20px;
-    }
-    section, #section-client{
-        flex-direction: column;
-        transition: 1s;
-    }
-    article, #article-about,#article-contact{
-        margin: 0 0 10px 0;
-        border-bottom: 1px solid var(--light-brown);
-    }
-    #article-about,#article-contact{
-        width: unset;
-    }
-    article ol{
-        padding: 0 30px;
-    }
-    aside{
-        margin-left: unset;
-        border-bottom: 1px solid var(--grey-light);
-    }
-}
-/* écrans portables moyens */
-
-@media (min-width:320px)
-and (max-width:480px){
-    .header-info{
         font-size: .5rem;
         text-align: center;
         padding: 10px;
@@ -460,22 +435,33 @@ and (max-width:480px){
     .footer-copyright p{
         font-size: .8em;
     }
+    section, #section-client{
+        flex-direction: column;
+        transition: 1s;
+    }
+    article, #article-about,#article-contact{
+        margin: 0 0 10px 0;
+        border-bottom: 1px solid var(--light-brown);
+    }
+    #article-about,#article-contact{
+        width: unset;
+    }
+    article ol{
+        padding: 0 30px;
+    }
+    aside{
+        margin-left: unset;
+        border-bottom: 1px solid var(--grey-light);
+    }
 }
-
-/* écrans portables petits */
-
-
-@media (max-width:320px){
-    code{
-        font-size: 0.7em;
+@media (max-width:340px) {
+    table{
+        font-size: .5rem;
     }
-
-    table {
-        font-size: .5em;
-    }
-
     caption{
-        text-align: center;
+        font-size: .9em;
     }
-
+    pre{
+        font-size: .8em;
+    }
 }
