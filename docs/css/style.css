@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+/*------------------------
+* Déclaration de variables
+------------------------ */
+:root{
+    --dark-brown:rgba(70, 47, 47,1);
+    --brown: rgba(88, 29, 29,1);
+    --light-brown: rgba(122, 86, 86,1);
+    --wihte:rgba(240, 248, 255,1) ;
+    --grey-light: rgba(240, 248, 255,.6) ;
+}
+
+/*------------------------
+* Reset document
+------------------------ */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato';
+    color: rgba(19, 17, 17, 1);
+}
+
+/*------------------------
+* Body
+------------------------ */
+body{
+    margin: 10px;
+    background: linear-gradient(180deg, var(--wihte) 0%, var(--brown) 50%, var(--dark-brown) 100%);
+}
+
+/*------------------------
+* Header
+------------------------ */
+
+header{
+    transition: ease-in-out .5s;
+    background-color: var(--dark-brown);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    letter-spacing: .2rem;
+}
+
+/*------------------------
+* Style de Texte du document
+------------------------ */
+
+h1, header p, article p a i{
+    color: var(--wihte);
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 4em;
+}
+
+h2{
+    letter-spacing: .1rem;
+    padding-bottom: 10px;
+}
+
+h3,h4{
+    color: var(--dark-brown);
+    margin-left: 15px;
+    padding: 5px;
+}
+
+h2, p{
+    color: var(--grey-light);
+}
+
+.fas{
+    color: var(--grey-light);
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+/* Image du Header */
+
+#imgPerso{
+    transition: 1s;
+    width: 10em;
+    border: 10px solid var(--brown);
+}
+
+#imgPerso:hover{
+    transition: 1s;
+    border: 10px solid var(--light-brown);
+    content: url(../img/myImgNB.webp);
+    
+}
+
+/*  Message du header*/
+
+.header-info{
+    transition: 1s;
+    border-left: 1px solid var(--grey-light);
+    padding-left: 20px;
+}
+.header-info>h1{
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+/*------------------------
+* Navigation
+------------------------ */
+
+nav{
+    transition: .5s;
+    background-color: var(--dark-brown);
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px 0;
+}
+
+.nav-link, #nav-link-menu{
+    text-decoration: none;
+    color: var(--wihte);
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.nav-link:hover, #nav-link-menu:hover{
+    transition: 1s;
+    color: var(--brown);
+    background-color: var(--grey-light);
+    font-weight: 900;
+}
+
+#nav-link-menu{
+    display: none;
+}
+
+/*------------------------
+* Section
+------------------------ */
+
+section, #section-client{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+}
+
+#section-client{
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+}
+
+/*------------------------
+* Partie Gauche
+------------------------ */
+article{
+    margin-right: 5px;
+    padding: 20px;
+    background-color: var(--light-brown);
+}
+
+article a{
+    text-decoration: none;
+}
+
+article p a i:hover{
+    color: rgba(19, 17, 17, 1)
+}
+
+#article-contact, #article-about{
+    width: 75%;
+}
+
+/*------------------------
+* Partie Droite
+------------------------ */
+aside{
+    margin-left: 5px;
+    padding: 20px;
+    background-color: var(--light-brown);
+}
+
+#aside-coordo{
+    text-align: center;
+}
+
+/* Tableau de la partie droite */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid var(--brown)
+}
+  
+thead th:nth-child(1) {
+    width: 30%;
+}
+  
+thead th:nth-child(2) {
+    width: 20%;
+}
+  
+thead th:nth-child(3) {
+    width: 15%;
+}
+  
+thead th:nth-child(4) {
+    width: 35%;
+}
+  
+th, td {
+    padding: 20px;
+    color: var(--grey-light);
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--grey-light);
+}
+  
+tbody tr:nth-child(even) {
+    background-color: var(--dark-brown)
+}
+  
+table {
+    background-color: var(--brown)
+}
+
+caption {
+    padding: 10px;
+    font-size: .6em;
+    font-style: italic;
+    caption-side: bottom;
+    color: var(--wihte);
+    text-align: right;
+    letter-spacing: 1px;
+}
+
+/* code en exemple */
+
+pre{
+    padding: 10px;
+    border: 3px solid var(--brown);
+}
+
+/* boutton */
+
+button{
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid var(--dark-brown);
+    border-radius: 5px;
+    background-color: var(--grey-light);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:hover{
+    transition: .5s;
+    background-color: var(--dark-brown);
+    font-weight: 900;
+    border: 1px solid var(--grey-light);
+    border-radius: 5px;
+    color: var(--grey-light);
+}
+
+/*------------------------
+* partie contact
+------------------------ */
+
+input[type=text],textarea {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid var(--brown);
+    border-radius: 4px;
+    resize: vertical;
+}
+
+textarea{
+    height: 120px;
+}
+
+input[type=text]:focus,textarea:focus {
+    background-color:var(--dark-brown);
+    border: 2px solid var(--light-brown);
+    border-radius: 4px;
+    color: var(--wihte);
+    transition: .5s;
+}
+  
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+  
+input[type=submit] {
+    background-color: var(--brown);
+    color: var(--grey-light);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    text-transform: uppercase;
+}
+
+  
+input[type=submit]:hover {
+    background-color: rgba(240, 248, 255,1);
+    color: var(--brown);
+    font-weight: 900;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+  
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*------------------------
+* footer
+------------------------ */
+footer{
+    padding-top: 10px;
+    background-color: var(--dark-brown);
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    letter-spacing: .1rem;   
+}
+
+footer ul li{
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--grey-light);
+}
+
+footer h4{
+    color: var(--wihte);
+    text-transform: uppercase;
+
+}
+
+.footer-plan-site, .footer-adress{
+    width: 25%;    
+}
+
+.footer-plan-site a{
+    margin: 5px;
+    text-decoration: none;
+    color: var(--grey-light);
+}
+
+.footer-plan-site a:hover{ 
+    color: var(--wihte);
+}
+
+.footer-copyright{
+    border-top: 2px solid var(--grey-light);
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.footer-copyright sup, p{
+    color: var(--grey-light);
+}
+.footer-copyright p{
+    margin: 5px;
+    font-weight: 100;
+    letter-spacing: .2rem;
+}
+
+/*------------------------
+* Gestion du responsive
+------------------------ */
+
+@media screen and (max-width:768px) {
+    .header-info{
+        border-left: unset;
+        border-bottom: 1px solid var(--grey-light);
+        padding-bottom: 20px;
+    }
+    section, #section-client{
+        flex-direction: column;
+        transition: 1s;
+    }
+    article, #article-about,#article-contact{
+        margin: 0 0 10px 0;
+        border-bottom: 1px solid var(--light-brown);
+    }
+    #article-about,#article-contact{
+        width: unset;
+    }
+    article ol{
+        padding: 0 30px;
+    }
+    aside{
+        margin-left: unset;
+        border-bottom: 1px solid var(--grey-light);
+    }
+}
+/* petits écrans */
+
+@media (min-width:320px)
+and (max-width:480px){
+    .header-info{
+        font-size: .5rem;
+        text-align: center;
+        padding: 10px;
+    }
+    nav, #nav-link-menu{
+        transition: 1s;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-link{
+        display: none;
+    }
+
+    table{
+        font-size: .7em;
+    }
+
+    footer{
+        flex-direction: column;
+        font-size: 0.8em;
+        font-weight: 900;
+    }
+
+    .footer-plan-site,.footer-adress{
+        padding: 10px 0;
+        width: 75%;
+        text-align: center;
+    }
+
+    .footer-copyright p{
+        font-size: .8em;
+    }
+}
