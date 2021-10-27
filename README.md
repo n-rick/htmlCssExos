@@ -3,7 +3,9 @@
 ## Détail
 
 Faire 3 pages HTML Home / Clients / About, pour ces 3 pages faire un menu qui permet la navigation et un pied de page
+
 ### 1- Home : Faire une page de présentation (le texte importe peu) avec :
+
 - a. Plusieurs titres de plusieurs niveaux
 - b. Du Texte en gras, souligné, italique…
 - c. Faire un lien vers un site externe
@@ -17,6 +19,9 @@ Faire 3 pages HTML Home / Clients / About, pour ces 3 pages faire un menu qui pe
 
 ### 3- About : faire une page d’à-propos avec un lien mail et un lien téléphone
 
+## Aperçu
+
+![Home page](https://raw.githubusercontent.com/n-rick/htmlCssExos/preprod/docs/img/readMeImage.png)
 
 ## Copyright
 
