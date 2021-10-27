@@ -422,7 +422,7 @@ footer h4{
 /* petits écrans */
 
 @media (min-width:320px)
-and (max-width:520px){
+and (max-width:480px){
     .header-info{
         font-size: .5rem;
         text-align: center;
