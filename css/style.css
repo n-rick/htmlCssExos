@@ -399,10 +399,29 @@ footer h4{
         border-left: unset;
         border-bottom: 1px solid var(--grey-light);
         padding-bottom: 20px;
+        font-size: .5rem;
+        text-align: center;
+        padding: 10px;
+    }
+    nav, #nav-link-menu{
+        transition: 1s;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-link{
+        display: none;
     }
     section, #section-client{
         flex-direction: column;
         transition: 1s;
+    }
+    table{
+        font-size: .5em;
+    }
+    pre {
+        font-size: 0.7em;
+        margin: 5px;
+        padding: 5px;
     }
     article, #article-about,#article-contact{
         margin: 0 0 10px 0;
@@ -418,10 +437,22 @@ footer h4{
         margin-left: unset;
         border-bottom: 1px solid var(--grey-light);
     }
+    footer{
+        flex-direction: column;
+        font-size: 0.8em;
+        font-weight: 900;
+    }
+    .footer-plan-site,.footer-adress{
+        padding: 10px 0;
+        width: 75%;
+    }
+    .footer-copyright p{
+        font-size: .8em;
+    }
 }
 /* petits écrans */
 
-@media (min-width:320px)
+/* @media (min-width:310px)
 and (max-width:520px){
     .header-info{
         font-size: .5rem;
@@ -438,7 +469,12 @@ and (max-width:520px){
     }
 
     table{
-        font-size: .7em;
+        font-size: .5em;
+    }
+    pre {
+        font-size: 0.7em;
+        margin: 5px;
+        padding: 5px;
     }
 
     footer{
@@ -456,4 +492,4 @@ and (max-width:520px){
     .footer-copyright p{
         font-size: .8em;
     }
-}
+} */
