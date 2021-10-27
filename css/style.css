@@ -445,8 +445,20 @@ footer h4{
     .footer-plan-site,.footer-adress{
         padding: 10px 0;
         width: 75%;
+        text-align: center;
     }
     .footer-copyright p{
+        font-size: .8em;
+    }
+}
+@media (max-width:340px) {
+    table{
+        font-size: .5rem;
+    }
+    caption{
+        font-size: .9em;
+    }
+    pre{
         font-size: .8em;
     }
 }
