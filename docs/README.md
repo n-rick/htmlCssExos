@@ -1,7 +1,5 @@
 # Exercice HTML et CSS | 2iTech Academy | 2021
 
-# Exercice HTML et CSS | 2iTech Academy | 2021
-
 ## Détail
 
 Faire 3 pages HTML Home / Clients / About, pour ces 3 pages faire un menu qui permet la navigation et un pied de page
